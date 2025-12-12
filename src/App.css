@@ -1,4 +1,4 @@
-/* === RESET بسيط === */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,26 +6,24 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* === خلفية عامة + تمركز المحتوى === */
 body {
   background: #eef1f7;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* لكي لا يهبط بزاف */
+  align-items: flex-start; 
   min-height: 100vh;
   padding-top: 30px;
 }
 
-/* === الحاوية الرئيسية === */
 .app-container {
   text-align: center;
   padding: 20px;
   width: 90%;
-  max-width: 1100px; /* باش يكون في الوسط وما يكبرش بزاف */
+  max-width: 1100px; 
   margin: 0 auto;
 }
 
-/* === عنوان التطبيق === */
+
 .app-container h1 {
   font-size: 34px;
   font-weight: 800;
@@ -35,19 +33,18 @@ body {
   text-shadow: 1px 2px 3px rgba(0,0,0,0.1);
 }
 
-/* === الأعمدة === */
 .columns {
   display: flex;
   gap: 30px;
   justify-content: center;
   margin-top: 20px;
-  flex-wrap: wrap; /* باش يديرو Responsive */
+  flex-wrap: wrap; 
 }
 
-/* === عمود Kanban === */
+
 .column {
   background: #ffffff;
-  width: 300px;         /* كبرتو باش يعطي شكل تريلو أكثر */
+  width: 300px;        
   padding: 20px;
   border-radius: 16px;
 
@@ -55,13 +52,13 @@ body {
   transition: 0.25s ease;
 }
 
-/* تأثير Hover */
+
 .column:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* عنوان العمود */
+
 .column h2 {
   font-size: 21px;
   font-weight: 700;
@@ -71,7 +68,7 @@ body {
   color: #34495e;
 }
 
-/* === بطاقة المهمة === */
+
 .task-card {
   background: #ffffff;
   padding: 15px;
@@ -80,10 +77,10 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 
   transition: 0.25s;
-  border-left: 4px solid #3498db; /* لمسة Trello */
+  border-left: 4px solid #3498db; 
 }
 
-/* تأثير Hover */
+
 .task-card:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
@@ -96,7 +93,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* === الأزرار داخل البطاقات === */
 .actions {
   display: flex;
   gap: 6px;
@@ -123,7 +119,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* === فورم إضافة مهمة === */
+
 .task-form {
   display: flex;
   justify-content: center;
