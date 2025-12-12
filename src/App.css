@@ -1,0 +1,164 @@
+/* === RESET بسيط === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === خلفية عامة + تمركز المحتوى === */
+body {
+  background: #eef1f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* لكي لا يهبط بزاف */
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+/* === الحاوية الرئيسية === */
+.app-container {
+  text-align: center;
+  padding: 20px;
+  width: 90%;
+  max-width: 1100px; /* باش يكون في الوسط وما يكبرش بزاف */
+  margin: 0 auto;
+}
+
+/* === عنوان التطبيق === */
+.app-container h1 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 25px;
+
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+}
+
+/* === الأعمدة === */
+.columns {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap; /* باش يديرو Responsive */
+}
+
+/* === عمود Kanban === */
+.column {
+  background: #ffffff;
+  width: 300px;         /* كبرتو باش يعطي شكل تريلو أكثر */
+  padding: 20px;
+  border-radius: 16px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.25s ease;
+}
+
+/* تأثير Hover */
+.column:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* عنوان العمود */
+.column h2 {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #eaeaea;
+  color: #34495e;
+}
+
+/* === بطاقة المهمة === */
+.task-card {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+  transition: 0.25s;
+  border-left: 4px solid #3498db; /* لمسة Trello */
+}
+
+/* تأثير Hover */
+.task-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.task-card p {
+  text-align: left;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* === الأزرار داخل البطاقات === */
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 7px 0;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+
+  transition: 0.2s;
+}
+
+.actions button:hover {
+  background: #1b6fa5;
+  transform: translateY(-2px);
+}
+
+/* === فورم إضافة مهمة === */
+.task-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-form input {
+  padding: 12px;
+  width: 300px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  transition: 0.2s;
+}
+
+.task-form input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52,152,219,0.35);
+}
+
+.task-form button {
+  padding: 12px 20px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.task-form button:hover {
+  background: #1e8c4c;
+  transform: translateY(-2px);
+}
